@@ -1,0 +1,166 @@
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card--saved {
+  outline: 2px solid #ff385c;
+}
+
+.card--luxury {
+  background: linear-gradient(135deg, #fff9f0, #fff);
+}
+
+.card--booked {
+  opacity: 0.7;
+}
+
+.card__img-wrap {
+  position: relative;
+}
+
+.card__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card__heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.card__heart:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.card__superhost {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #fff;
+  color: #222;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.card__luxury {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #f5a623;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.card__body {
+  padding: 14px;
+}
+
+.card__title {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__location {
+  font-size: 13px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 0 10px;
+}
+
+.card__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card__rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #222;
+}
+
+.card__icon {
+  color: #888;
+  font-size: 12px;
+}
+
+.card__icon--star {
+  color: #ff385c;
+}
+
+.card__status {
+  font-size: 12px;
+  font-weight: 600;
+  color: #00a550;
+  background: #e6f9f0;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.card__status--booked {
+  color: #cc0000;
+  background: #ffeaea;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 10px;
+}
+
+.card__price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #222;
+}
+
+.card__price small {
+  font-weight: 400;
+  color: #888;
+  font-size: 12px;
+}
+
+.card__date {
+  font-size: 12px;
+  color: #888;
+}
