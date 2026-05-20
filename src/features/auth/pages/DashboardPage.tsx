@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import { authApi } from "../../../services/api";
 import {
-  MdDashboard, MdMessage, MdPerson, MdSettings, MdLogout,
+  MdDashboard, MdMessage, MdPerson, MdLogout,
   MdBookOnline, MdBookmark, MdStar, MdAddHome,
   MdFormatListBulleted, MdBarChart, MdRateReview,
 } from "react-icons/md";
@@ -22,7 +22,6 @@ const GUEST_NAV_MAIN: NavItem[] = [
 const GUEST_NAV_ACCOUNT: NavItem[] = [
   { label: "My Reviews", icon: <MdStar size={18} />, path: "#" },
   { label: "Profile", icon: <MdPerson size={18} />, path: "/profile" },
-  { label: "Settings", icon: <MdSettings size={18} />, path: "#" },
 ];
 
 const HOST_NAV_MAIN: NavItem[] = [
@@ -40,7 +39,6 @@ const HOST_NAV_MANAGE: NavItem[] = [
 
 const HOST_NAV_ACCOUNT: NavItem[] = [
   { label: "Profile", icon: <MdPerson size={18} />, path: "/profile" },
-  { label: "Settings", icon: <MdSettings size={18} />, path: "#" },
 ];
 
 const StatCard = ({ label, value, icon }: { label: string; value: string; icon: ReactNode }) => (
