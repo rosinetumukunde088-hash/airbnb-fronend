@@ -132,7 +132,7 @@ const CreateListingPage = () => {
         dispatch({
           type: "ADD_LISTING",
           payload: {
-            id: Date.now(), title: payload.title, location: payload.location,
+            id: String(Date.now()), title: payload.title, location: payload.location,
             price: payload.pricePerNight, rating: 0, superhost: false,
             available: true, availableFrom: new Date().toISOString().split("T")[0]!,
             img: form.img || "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=260&fit=crop",
